@@ -1,0 +1,35 @@
+<?php
+echo '<div class="case medium-tbpadding">';
+  while ( have_posts() ) : the_post();
+    get_template_part( 'parts/content', 'hbody' );
+  endwhile;
+  echo ' <div class="case-panel">';
+    echo ' <div class="row" >';
+      echo '<div class="small-12">';
+        echo ' <div class="case">';
+          $query = new WP_Query( 'order=asc&post_type=case&post_status=publish&paged='. get_query_var('paged'));
+          if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post();
+          echo '<div class="small-12 medium-4 large-4 columns cc">';
+            echo '<a href="' . get_the_permalink() . '">';
+              the_post_thumbnail( array(320,242) );
+            echo '</a>';
+            echo '<div class="panel white">';
+              echo '<div class="ccText">';
+                the_title('<h3><a href="' . get_the_permalink() . '" rel="bookmark" title="' . get_the_title() . '">','</a></h3>');
+                the_excerpt();
+              echo '</div>';
+              echo '<p><a class="readmore primary-color" href="' . get_the_permalink() . '" rel="bookmark" title="' . get_the_title() . '">';
+                echo "Læs mere her";
+              echo '</a></p>';
+            echo '</div>';
+          echo '</div>';
+          endwhile;
+          wp_reset_postdata();
+          else :
+          _e( 'Sorry, no posts matched your criteria.' );
+          endif;
+        echo '</div>';
+      echo '</div>';
+    echo '</div>';
+  echo '</div>';
+echo '</div>';

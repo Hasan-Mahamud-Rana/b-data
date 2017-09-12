@@ -1,0 +1,44 @@
+body.login {
+  background: #fff;
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.login h1 a {
+  background-image: url(../images/Bordingdata.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  width: 186px;
+  height: 44px;
+  text-indent: -9999px;
+  overflow: hidden;
+  display: block;
+}
+.login #backtoblog a, .login #nav a, .login #login_error, .login .message , .message {
+  color: #fff;
+}
+.login #login_error, .login .message {
+  margin-left: 24px;
+}
+.login #login_error, .login .message, .message , .login form{
+ background-color: transparent;
+}
+.login form {
+ margin-top: 0;
+}
+.wp-core-ui .button-primary {
+  background: #1f295b;
+  border-color: #1f295b #1f295b #1f295b;
+  -webkit-box-shadow: 0 1px 0 #1f295b;
+  box-shadow: 0 1px 0 #1f295b;
+  text-shadow: 0 -1px 1px #1f295b, 1px 0 1px #1f295b, 0 1px 1px #1f295b, -1px 0 1px #1f295b;
+}
+.wp-core-ui .button-primary.focus, .wp-core-ui .button-primary.hover, .wp-core-ui .button-primary:focus, .wp-core-ui .button-primary:hover {
+  background: #5ABC56;
+  border-color: #5abc56 #5abc56 #5abc56;
+  -webkit-box-shadow: 0 1px 0 #5abc56;
+  box-shadow: 0 1px 0 #5abc56;
+  text-shadow: 0 -1px 1px #5abc56, 1px 0 1px #5abc56, 0 1px 1px #5abc56, -1px 0 1px #5abc56;
+}
