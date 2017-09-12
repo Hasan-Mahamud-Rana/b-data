@@ -1,5 +1,5 @@
 Find out more here: http://portfolio.hmrana.com/  
-Demo: bordingdata.com
+Demo: https://bordingdata.com/
 
 Currently using Foundation 6.3.1.
 
@@ -16,6 +16,7 @@ b-Data comes pre-baked with all of the great features that are found in the Foun
 - Grid archive templates
 - Translation Support
 - Bower and Gulp Support
+- The site features catalogs, multilingual, blog, contact information as well as company information
 - And much, much more!
 
 ### What tools do I need to use b-Data?
