@@ -1,5 +1,5 @@
 Find out more here: http://portfolio.hmrana.com/  
-Demo: https://bordingdata.com/
+Demo: http://test.bordingvista.com/b-data-v3/
 
 Currently using Foundation 6.3.1.
 
